@@ -1,0 +1,8 @@
+/* App-level styles kept minimal. Global reset lives in index.css */
+
+/* Add any app-scoped utilities below as needed. */
+
+/* Example: ensure main app container expands */
+.app-root {
+  width: 100%;
+}

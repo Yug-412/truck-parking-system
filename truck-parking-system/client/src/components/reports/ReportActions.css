@@ -1,0 +1,27 @@
+.excel-btn,
+.print-btn{
+    border:none;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.excel-btn{
+    background:#16A34A;
+}
+
+.excel-btn:hover{
+    background:#15803D;
+}
+
+.print-btn{
+    background:#991B1B;
+}
+
+.print-btn:hover{
+    background:#7F1D1D;
+}

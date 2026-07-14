@@ -1,0 +1,110 @@
+.login-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: radial-gradient(circle at top, rgba(233, 76, 60, 0.12), transparent 38%),
+      linear-gradient(180deg, #f7fafc 0%, #edf2f7 100%);
+    padding: 20px;
+}
+
+.login-card{
+    width:min(460px,100%);
+    background: rgba(255,255,255,0.96);
+    padding: 42px 36px;
+    border-radius: 28px;
+    box-shadow: 0 28px 80px rgba(15, 23, 42, 0.12);
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    backdrop-filter: blur(10px);
+}
+
+.login-card h1{
+    color:#b91c1c;
+    text-align:center;
+    font-size:32px;
+    line-height:1.1;
+    margin:0 0 12px;
+    font-weight:800;
+    letter-spacing:0.2px;
+}
+
+.login-card h3{
+    text-align:center;
+    color:#4b5563;
+    margin-bottom:28px;
+    font-size:16px;
+}
+
+.login-card select,
+.login-card input{
+    width:100%;
+    padding:16px 18px;
+    margin-bottom:18px;
+    border:1px solid rgba(148,163,184,0.35);
+    border-radius:14px;
+    font-size:15px;
+    box-sizing:border-box;
+    background:#fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-card select:focus,
+.login-card input:focus{
+    outline: none;
+    border-color: #ef4444;
+    box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.12);
+}
+
+.password-wrapper{
+    position: relative;
+}
+
+.password-wrapper input{
+    padding-right: 104px;
+}
+
+.password-toggle{
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    border: none;
+    background: rgba(243, 244, 246, 0.92);
+    color: #b91c1c;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    transition: transform .2s ease, background .2s ease;
+}
+
+.password-toggle:hover{
+    transform: translateY(-50%) scale(1.03);
+    background: rgba(243, 244, 246, 1);
+}
+
+.login-card button:not(.password-toggle){
+    width:100%;
+    padding:16px;
+    background: linear-gradient(135deg, #991B1B, #DC2626);
+    color:white;
+    border:none;
+    border-radius:14px;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-card button:not(.password-toggle):hover{
+    transform: translateY(-1px);
+    box-shadow: 0 14px 30px rgba(220, 38, 38, 0.2);
+}
+
+.login-card button:hover{
+    background:#7f1d1d;
+}

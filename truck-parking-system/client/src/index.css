@@ -1,0 +1,44 @@
+/* Responsive Reset & Base */
+
+/* Box sizing and remove default spacing */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Make root elements full width and height */
+html, body, #root {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    width: 100%;
+    max-width: none;
+    display: block;
+}
+
+:root{
+    --sidebar-width: 220px;
+}
+
+body {
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    background: #f5f7fb;
+    color: #111827;
+    line-height: 1.45;
+    overflow-x: hidden;
+}
+
+/* Typography and form resets */
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; }
+
+/* Utility */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }

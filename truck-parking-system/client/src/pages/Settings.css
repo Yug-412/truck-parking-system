@@ -1,0 +1,55 @@
+.settings-page{
+    padding:30px;
+    display:flex;
+    justify-content:flex-start;
+}
+
+.settings-card{
+    width:100%;
+    max-width:none;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.settings-card h1{
+    color:#991B1B;
+    margin-bottom:25px;
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:15px;
+    box-sizing:border-box;
+}
+
+.save-btn{
+    width:100%;
+    padding:14px;
+    background:#991B1B;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+.save-btn:hover{
+    background:#7f1d1d;
+}

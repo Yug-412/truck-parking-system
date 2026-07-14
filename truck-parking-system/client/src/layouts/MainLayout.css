@@ -1,0 +1,50 @@
+.layout {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+    margin-left: var(--sidebar-width, 220px);
+}
+
+.page-content {
+    width: 100%;
+    padding: 95px 30px 30px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: var(--sidebar-width);
+    flex-shrink: 0;
+}
+
+
+
+/* Tablet & Mobile: reset left margin so main content fills full width */
+@media (max-width:1024px) {
+
+    .main-content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .page-content {
+        padding: 75px 20px 20px;
+    }
+
+}
+
+@media (max-width:768px){
+    .page-content{ padding: 75px 12px 16px }
+}
+
+/* Overlay for slide-in sidebar */
+.sidebar-overlay{
+    position:fixed;
+    inset:0;
+    background: rgba(0,0,0,.45);
+    z-index: 995;
+}
