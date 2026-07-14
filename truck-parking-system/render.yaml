@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: truck-parking-backend
+    env: node
+    plan: free
+    region: oregon
+    rootDir: truck-parking-system/server
+    buildCommand: npm install && npm rebuild sqlite3
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+staticSites:
+  - name: truck-parking-frontend
+    plan: free
+    region: oregon
+    rootDir: truck-parking-system/client
+    buildCommand: npm install && npm run build
+    publishDir: dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://truck-parking-backend.onrender.com
