@@ -2,12 +2,13 @@
 .print-btn{
     border:none;
     color:white;
-    padding:12px 20px;
-    border-radius:8px;
+    padding:12px 16px;
+    border-radius:14px;
     cursor:pointer;
     font-size:14px;
     font-weight:600;
-    transition:.3s;
+    transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+    min-height:46px;
 }
 
 .excel-btn{
@@ -16,6 +17,7 @@
 
 .excel-btn:hover{
     background:#15803D;
+    transform:translateY(-1px);
 }
 
 .print-btn{
@@ -24,4 +26,12 @@
 
 .print-btn:hover{
     background:#7F1D1D;
+    transform:translateY(-1px);
+}
+
+@media (max-width:768px){
+    .excel-btn,
+    .print-btn{
+        width:100%;
+    }
 }

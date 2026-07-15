@@ -1,35 +1,37 @@
 .report-summary-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:15px;
-    margin:20px 0;
+    gap:12px;
+    margin:16px 0 18px;
 }
 
 .summary-card{
     background:#fff;
-    border-radius:12px;
-    padding:18px;
+    border-radius:16px;
+    padding:16px;
     text-align:center;
     border-top:4px solid #991B1B;
-    box-shadow:0 3px 10px rgba(0,0,0,.08);
-    transition:.3s;
+    box-shadow:0 10px 24px rgba(15,23,42,.07);
+    transition:transform .2s ease;
 }
 
 .summary-card:hover{
-    transform:translateY(-3px);
+    transform:translateY(-2px);
 }
 
 .summary-card h4{
     margin:0;
-    color:#666;
-    font-size:15px;
-    font-weight:600;
+    color:#64748b;
+    font-size:13px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
 }
 
 .summary-card h2{
-    margin-top:12px;
+    margin-top:8px;
     color:#991B1B;
-    font-size:28px;
+    font-size:24px;
     font-weight:700;
 }
 

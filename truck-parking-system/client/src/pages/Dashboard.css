@@ -4,7 +4,6 @@
     padding:24px 0 30px;
 }
 
-/* Sections spacing */
 .section{
     margin-bottom:40px;
 }
@@ -25,15 +24,15 @@
     display:flex;
     align-items:center;
     gap:12px;
-    margin:0 0 24px;
+    margin:0 0 18px;
 }
 
 .section-heading::before,
 .section-heading::after{ content:""; flex:1; height:1px; background:rgba(145,20,20,0.08); }
 
-.section-heading h2{ margin:0; padding:0 12px; font-size:22px; font-weight:800; color:#111827 }
+.section-heading h2{ margin:0; padding:0 12px; font-size:20px; font-weight:800; color:#111827 }
 
-.dashboard-table{ width:100%; margin-top:24px }
+.dashboard-table{ width:100%; margin-top:18px }
 
 @media (max-width:1200px){
     .stats-grid{ grid-template-columns:repeat(2,1fr) }
@@ -41,6 +40,30 @@
 }
 
 @media (max-width:768px){
-    .stats-grid, .payment-grid{ grid-template-columns:1fr; gap:16px }
-    .page-content{ padding-left:16px; padding-right:16px }
+    .dashboard{
+        padding:8px 0 24px;
+    }
+
+    .stats-grid,
+    .payment-grid{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+        gap:12px;
+    }
+
+    .section-heading{
+        margin:14px 0 12px;
+    }
+
+    .section-heading h2{
+        font-size:16px;
+        padding:0 6px;
+    }
+}
+
+@media (max-width:480px){
+    .stats-grid,
+    .payment-grid{
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
 }

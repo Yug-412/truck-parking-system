@@ -6,15 +6,15 @@
     top:0;
     z-index:1000;
 
-    background:linear-gradient(180deg,#8B0000,#B91C1C);
+    background:linear-gradient(145deg,#8B0000,#B91C1C);
     color:white;
 
     display:flex;
     flex-direction:column;
 
-    box-shadow:4px 0 24px rgba(0,0,0,0.12);
+    box-shadow:4px 0 24px rgba(0,0,0,0.14);
 
-    transition:0.3s ease;
+    transition:transform .28s ease, box-shadow .28s ease;
 }
 
 .logo{
@@ -58,66 +58,62 @@ nav{
     align-items:center;
     gap:15px;
 
-    padding:15px 18px;
+    padding:14px 16px;
 
     color:white;
     text-decoration:none;
 
-    border-radius:12px;
+    border-radius:14px;
 
-    transition:.3s;
+    transition:transform .2s ease, background .2s ease, color .2s ease;
 
-    font-size:16px;
+    font-size:15px;
     font-weight:600;
 }
 
 .menu svg{
-    font-size:20px;
+    font-size:18px;
 }
 
 .menu:hover{
-    background:rgba(255,255,255,.15);
-    transform:translateX(5px);
+    background:rgba(255,255,255,.16);
+    transform:translateX(3px);
 }
 
 .active{
-    background:white;
+    background:rgba(255,255,255,.95);
     color:#991B1B;
+    box-shadow:0 10px 24px rgba(15,23,42,0.12);
 }
 
 .active svg{
     color:#991B1B;
 }
 
-/* Close Button */
-
 .close-sidebar{
     display:none;
 }
 
-/* ================= MOBILE ================= */
-
-
-/* Tablet & Mobile: hide sidebar by default and slide in */
 @media (max-width:1024px){
-
     .sidebar{
-        left: calc(-1 * var(--sidebar-width, 220px));
-        transition: left .3s ease;
-        width: var(--sidebar-width, 220px);
+        left:0;
+        transform:translateX(-100%);
+        width:260px;
+        border-radius:0 20px 20px 0;
+        box-shadow:16px 0 36px rgba(15,23,42,0.22);
     }
 
     .sidebar.open{
-        left: 0;
+        transform:translateX(0);
     }
 
     .close-sidebar{
         display:flex;
         position:absolute;
         right:12px;
-        top:30px;
-        width:35px;
-        height:35px;
+        top:24px;
+        width:34px;
+        height:34px;
         justify-content:center;
         align-items:center;
         border:none;
@@ -125,7 +121,22 @@ nav{
         background:white;
         color:#991B1B;
         cursor:pointer;
-        font-size:18px;
+        font-size:16px;
+    }
+}
+
+@media (max-width:768px){
+    .sidebar{
+        width:84vw;
+        max-width:260px;
     }
 
+    nav{
+        padding:16px 12px 20px;
+    }
+
+    .menu{
+        padding:13px 14px;
+        font-size:14px;
+    }
 }
