@@ -20,4 +20,4 @@ staticSites:
     publishDir: dist
     envVars:
       - key: VITE_API_URL
-        value: https://truck-parking-backend.onrender.com
+        value: https://truck-parking-backend-lo7z.onrender.com
